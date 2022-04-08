@@ -12,18 +12,22 @@
     <h1>Yo!</h1>
     <h2>This is neverk(no)wmore</h2>
 
-    <ul>
-        <li>Life Flask: Instant recovery, immunity bleeding</li>
-        <li>Quicksilver flask:Increase duration</li>
-        <li>Atziri's Promise</li>
-        <li>Taste of haste</li>
-        <li>Diamond flask: Increase critical strike chance</li>
-        <li>Buy Awakened cold peneration</li>
-        <li>Buy Awakened increased area of effect</li>
-        <li>Unleash lv1</li>
-        <li>Intutive leap</li>
-        <li>Inspired learning</li>
-    </ul>
+    <div id='dtc-search'></div>
+    <script type='text/javascript'>
+        var dtc_search = {
+            path: ('https:' == document.location.protocol ? 'https://' : 'http://') + 'plugin.datacom.vn',
+            productKey: 'x1c6pedfxm9o92i',
+            languageCode: 'vi',
+        };
+        (function () {
+            var dtc_head = document.getElementsByTagName('head')[0];
+            var dtc_script = document.createElement('script');
+            dtc_script.async = true;
+            dtc_script.src = dtc_search.path.concat('/Resources/Static/Js/plugin.js?v=' + (new Date().getTime()));
+            dtc_script.charset = 'UTF-8';
+            dtc_head.appendChild(dtc_script);
+        })();
+    </script>
 </body>
 
 </html>
